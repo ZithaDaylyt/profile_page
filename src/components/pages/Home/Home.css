@@ -1,0 +1,140 @@
+.main{
+    width: 100%;
+    flex-direction: column;
+}
+.per-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem 0;
+
+}
+.main h1{
+    font-size: 73px;
+    font-weight: 700;
+}
+.main p{
+    font-size: 28px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 14rem;
+    height: 14rem;
+}
+.image img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.text p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+.line{
+    width: 80%;
+    background-color: black;
+    height: .1rem;
+    align-self: center;
+    margin-top: 5rem;
+}
+.read-more{
+    width: 8rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: black;
+    text-decoration: none;
+    padding: 0 .3rem;
+}
+.read-more span{
+    font-weight: 600;
+    margin-right: .2rem;
+    color: #fff;
+}
+.fa-arrow-down{
+    color: #fff;
+    margin: .1rem;
+}
+/* Responsive */
+@media screen and (max-width :960px){
+  
+    .main h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .per-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem 0;
+    
+    }
+    .per-info p{
+        font-size: 1rem;
+    }
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        width: 12rem;
+        height: 12rem;
+    }
+    .image img{
+        width: 12rem;
+        height: 12rem;
+        border-radius:50%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .text p{
+        font-size: x-small;
+        color: #333;
+        padding-top:.4rem ;
+        margin-top: 1rem;
+        letter-spacing: .4px;
+    }
+    .line{
+        width: 80%;
+        background-color: black;
+        height: .1rem;
+        align-self: center;
+        margin-top: 3rem;
+    }
+    .read-more{
+        width: 16rem;
+        height:2rem;
+        border-radius: .7rem;
+        background-color: #0d1321;
+        text-decoration: none;
+        margin-top: 2rem;
+        box-shadow: 0 .3rem .4rem #000;
+    }
+    .read-more span{
+        margin-right: .3rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-size: .7rem;
+        text-align: center;
+        text-shadow: 0 .3rem .4rem #b5d8cc;
+    }
+    .fa-arrow-down{
+        color: #fff;
+        font-size: .5rem;
+        text-align: center;
+    }
+}

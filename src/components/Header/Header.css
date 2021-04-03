@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+
+.name-logo{
+    width:50px ;
+    height: 50px;
+    background: #333;
+    border-radius: 100%;
+    margin-left: 2.3rem;
+}
+.name-logo h3{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+}
+.nav-container{
+    background: transparent;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.items{
+    display: flex;
+    margin-left: -27rem;
+}
+.social-items{
+    display: flex;
+    margin: 1.5rem;
+}
+.nav-container .item{
+    font-weight: 800;
+    margin: 1rem;
+}
+.lnk{
+    text-decoration: none;
+    color: #222;
+    padding: .01rem;
+}
+.link{
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.link:hover{
+    transform: scale(1.05);
+}
+.fab{
+    font-weight: 400;
+    color: #fff;
+}
+.lnk:hover{
+   
+    background-color:#333;
+    border-radius: .4rem;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.menu-icon{
+    font-size: 1.3rem;
+    display: none;
+}
+
+/* for mobile */
+@media screen and (max-width :960px){
+     .nav-container{
+        position: relative;
+        height: 3rem;
+     }
+     .name-logo{
+        width:30px ;
+        height: 30px;
+    }
+    .name-logo h3{
+        font-size:13px;
+    }
+     .items{
+       position: absolute;
+       top: 3rem;
+       left: -100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       background: #333;
+       height: 100vh;
+       margin: 0;
+       justify-content: space-evenly;
+       transition: all .5s ease;
+     }
+     .items.active{
+        left:0;
+        z-index: 100;
+        opacity: 1;
+        transition: all .5s ease;
+    }
+     .lnk{
+         width: 100%;
+         text-align: center;
+         padding: .01rem;
+         width: 100%;
+         display: table;
+         font-size: x-large;
+         color: #fff;
+     }
+     .lnk:hover{
+        background-color: #555;
+        border-radius: 0;
+     }
+     .menu-icon{
+         display: block;
+         position: absolute;
+         top: 0;
+         right: 0;
+         transform: translate(-100%,20%);
+         font-size: 1.8rem;
+         cursor: pointer;
+     }
+     .social-items{
+        display: none;
+     }
+}
